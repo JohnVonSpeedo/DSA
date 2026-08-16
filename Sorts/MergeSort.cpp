@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 
-void merge(vector<int> &arr, int left, int mid, int right){
+void merge(std::vector<int> &arr, int left, int mid, int right){
     int length1 = mid - left + 1;
     int length2 = right - mid; 
 
-    vector<int> L(length1), R(length2);
+    std::vector<int> L(length1), R(length2);
 
     for(int i = 0; i < length1; i++)
         L[i] = arr[left + 1];
