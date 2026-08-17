@@ -7,7 +7,7 @@ void merge(std::vector<int> &arr, int left, int mid, int right){
     std::vector<int> L(length1), R(length2);
 
     for(int i = 0; i < length1; i++)
-        L[i] = arr[left + 1];
+        L[i] = arr[left + i];
     for(int i = 0; i < length2; i++)
         R[i] = arr[mid + 1 + i];
 
