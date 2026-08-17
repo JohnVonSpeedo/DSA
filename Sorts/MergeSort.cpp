@@ -51,5 +51,10 @@ void mergeSort(std::vector<int> &arr, int left, int right){
 }
 
 int main(){
+    std::vector<int> nums = {5, 4, 8, 7, 3, 12, 6, 2};
+    int length = nums.size();
+    mergeSort(nums, 0, length - 1);
+    for (int i = 0; i < length; i++)
+        std::cout << nums[i] << " ";
     return 0;
 }
